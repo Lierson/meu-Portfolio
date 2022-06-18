@@ -46,6 +46,7 @@ canvas {
 /* ---- particles.js container ---- */
 #particles-container {
     background-color: #000000;
+    height: 400px;
 }
 .navbar-toggler-icon {
     background-color: rgb(240, 235, 235);
@@ -57,4 +58,21 @@ canvas {
     border-radius: 5px;
     border-bottom: 1px solid rgb(194, 191, 28);
     padding: 0px;
+}
+/* footer */
+
+.text-center .p-3 {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+.mask {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bg-image { 
+    transition: 0.5s; 
+}
+.bg-image:hover { 
+    transform: scale(1.5); 
 }
