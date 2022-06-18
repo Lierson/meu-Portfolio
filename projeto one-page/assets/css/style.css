@@ -70,9 +70,16 @@ canvas {
 .text-center {
     background-color: rgba(0, 0, 0, 0.2);
 }
+.text-white {
+    text-decoration: none;
+}
 .bg-image { 
     transition: 0.5s; 
 }
 .bg-image:hover { 
     transform: scale(1.5); 
+}
+#linkedin {
+    width: 15px;
+    margin-left: 5px;
 }
