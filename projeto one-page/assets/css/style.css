@@ -26,29 +26,35 @@ body {
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    display: flex;
+    margin-top: 20px;
 }
 .nav-item {
     font-size: 25px;
     color:rgb(255, 255, 255) ;
     font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+    padding: 0px;  
 }
 .nav-link:hover {
     border-bottom: 1px solid rgb(194, 191, 28);;
-    color: rgb(194, 191, 28);
+    color: rgb(194, 191, 28); 
 }
 /* ---- reset ---- */
-  canvas {
+canvas {
     display: block;
-  }
-
-  /* ---- particles.js container ---- */
-  #particles-container {
+}
+/* ---- particles.js container ---- */
+#particles-container {
     background-color: #000000;
-  }
+}
 .navbar-toggler-icon {
     background-color: rgb(240, 235, 235);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 30%;
 }
- 
+.active {
+    background-color: rgb(194, 191, 28);
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(194, 191, 28);
+    padding: 0px;
+}

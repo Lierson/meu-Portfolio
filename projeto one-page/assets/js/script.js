@@ -70,3 +70,4 @@ particlesJS("particles-container", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+  
