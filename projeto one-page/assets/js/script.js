@@ -71,3 +71,58 @@ particlesJS("particles-container", {
   };
   requestAnimationFrame(update);
   
+  $("i").click(function () {
+    $("ul").toggleClass("open");
+  });
+  
+  /*função mudança de estilo */
+
+function myFunction0() {
+  document.querySelector('#manter').classList.add('active');
+  document.querySelector('#manter1').classList.remove('active');
+  document.querySelector('#manter2').classList.remove('active');
+  document.querySelector('#manter3').classList.remove('active');
+  document.querySelector('#manter4').classList.remove('active');
+}
+function myFunction1() {
+  document.querySelector('#manter1').classList.add('active');
+  document.querySelector('#manter').classList.remove('active');
+  document.querySelector('#manter2').classList.remove('active');
+  document.querySelector('#manter3').classList.remove('active');
+  document.querySelector('#manter4').classList.remove('active');
+}
+function myFunction2() {
+  document.querySelector('#manter2').classList.add('active');
+  document.querySelector('#manter').classList.remove('active');
+  document.querySelector('#manter1').classList.remove('active');
+  document.querySelector('#manter3').classList.remove('active');
+  document.querySelector('#manter4').classList.remove('active');
+}
+function myFunction3() {
+  document.querySelector('#manter3').classList.add('active');
+  document.querySelector('#manter').classList.remove('active');
+  document.querySelector('#manter1').classList.remove('active');
+  document.querySelector('#manter2').classList.remove('active');
+  document.querySelector('#manter4').classList.remove('active');
+}
+function myFunction4() {
+  document.querySelector('#manter4').classList.add('active');
+  document.querySelector('#manter').classList.remove('active');
+  document.querySelector('#manter1').classList.remove('active');
+  document.querySelector('#manter2').classList.remove('active');
+  document.querySelector('#manter3').classList.remove('active');
+}
+  
+
+    
+    
+ 
+
+  
+  
+ 
+ 
+ 
+  
+ 
+
