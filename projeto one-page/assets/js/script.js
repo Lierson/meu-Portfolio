@@ -77,30 +77,30 @@ particlesJS("particles-container", {
   
   /*função mudança de estilo */
   function activeMenuItem(menuItem) { 
-    const selector = "#manter, #manter1, #manter2, #manter3, #manter4"; 
+    const selector = "#item-menu1, #item-menu2, #item-menu3, #item-menu4, #item-menu5"; 
     const menuItems = document.querySelectorAll(selector); 
     menuItems.forEach((item) => item.classList.remove("active")); 
     menuItem.classList.add("active"); 
   } 
 
   function activeFirstMenuItem() { 
-    activeMenuItem(document.querySelector("#manter")); 
+    activeMenuItem(document.querySelector("#item-menu1")); 
   } 
   
   function activeSecondMenuItem() { 
-    activeMenuItem(document.querySelector("#manter1")); 
+    activeMenuItem(document.querySelector("#item-menu2")); 
   } 
   
   function activeThirdMenuItem() { 
-    activeMenuItem(document.querySelector("#manter2")); 
+    activeMenuItem(document.querySelector("#item-menu3")); 
   } 
   
   function activeFourthMenuItem() { 
-    activeMenuItem(document.querySelector("#manter3")); 
+    activeMenuItem(document.querySelector("#item-menu4")); 
   } 
   
   function activeFifthMenuItem() { 
-    activeMenuItem(document.querySelector("#manter4")); 
+    activeMenuItem(document.querySelector("#item-menu5")); 
   } 
 
     
