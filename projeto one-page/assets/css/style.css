@@ -50,7 +50,7 @@ canvas {
     display: block;
 }
 /* ---- particles.js container ---- */
-#particles-container {
+#particlesContainer {
     background-color: #000000;
     height: 400px;
 }

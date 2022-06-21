@@ -1,4 +1,4 @@
-particlesJS("particles-container", {
+particlesJS("particlesContainer", {
     particles: {
       number: { value: 150, density: { enable: true, value_area: 800 } },
       color: { value: "#ffffff" },
@@ -76,32 +76,34 @@ particlesJS("particles-container", {
   });
   
   /*função mudança de estilo */
+
   function activeMenuItem(menuItem) { 
-    const selector = "#item-menu1, #item-menu2, #item-menu3, #item-menu4, #item-menu5"; 
+    const selector = "#itemMenu1, #itemMenu2, #itemMenu3, #itemMenu4, #itemMenu5"; 
     const menuItems = document.querySelectorAll(selector); 
     menuItems.forEach((item) => item.classList.remove("active")); 
     menuItem.classList.add("active"); 
   } 
-
+  
   function activeFirstMenuItem() { 
-    activeMenuItem(document.querySelector("#item-menu1")); 
+    activeMenuItem(document.querySelector("#itemMenu1")); 
   } 
   
   function activeSecondMenuItem() { 
-    activeMenuItem(document.querySelector("#item-menu2")); 
+    activeMenuItem(document.querySelector("#itemMenu2")); 
   } 
   
   function activeThirdMenuItem() { 
-    activeMenuItem(document.querySelector("#item-menu3")); 
+    activeMenuItem(document.querySelector("#itemMenu3")); 
   } 
   
   function activeFourthMenuItem() { 
-    activeMenuItem(document.querySelector("#item-menu4")); 
+    activeMenuItem(document.querySelector("#itemMenu4")); 
   } 
   
   function activeFifthMenuItem() { 
-    activeMenuItem(document.querySelector("#item-menu5")); 
+    activeMenuItem(document.querySelector("#itemMenu5"));  
   } 
+  
 
     
     
