@@ -53,7 +53,7 @@ particlesJS("particles-container", {
     },
     retina_detect: true
   });
-  var count_particles, stats, update;
+  let count_particles, stats, update;
   stats = new Stats();
   stats.setMode(0);
   stats.domElement.style.position = "absolute";
@@ -76,43 +76,32 @@ particlesJS("particles-container", {
   });
   
   /*função mudança de estilo */
+  function activeMenuItem(menuItem) { 
+    const selector = "#manter, #manter1, #manter2, #manter3, #manter4"; 
+    const menuItems = document.querySelectorAll(selector); 
+    menuItems.forEach((item) => item.classList.remove("active")); 
+    menuItem.classList.add("active"); 
+  } 
 
-function myFunction0() {
-  document.querySelector('#manter').classList.add('active');
-  document.querySelector('#manter1').classList.remove('active');
-  document.querySelector('#manter2').classList.remove('active');
-  document.querySelector('#manter3').classList.remove('active');
-  document.querySelector('#manter4').classList.remove('active');
-}
-function myFunction1() {
-  document.querySelector('#manter1').classList.add('active');
-  document.querySelector('#manter').classList.remove('active');
-  document.querySelector('#manter2').classList.remove('active');
-  document.querySelector('#manter3').classList.remove('active');
-  document.querySelector('#manter4').classList.remove('active');
-}
-function myFunction2() {
-  document.querySelector('#manter2').classList.add('active');
-  document.querySelector('#manter').classList.remove('active');
-  document.querySelector('#manter1').classList.remove('active');
-  document.querySelector('#manter3').classList.remove('active');
-  document.querySelector('#manter4').classList.remove('active');
-}
-function myFunction3() {
-  document.querySelector('#manter3').classList.add('active');
-  document.querySelector('#manter').classList.remove('active');
-  document.querySelector('#manter1').classList.remove('active');
-  document.querySelector('#manter2').classList.remove('active');
-  document.querySelector('#manter4').classList.remove('active');
-}
-function myFunction4() {
-  document.querySelector('#manter4').classList.add('active');
-  document.querySelector('#manter').classList.remove('active');
-  document.querySelector('#manter1').classList.remove('active');
-  document.querySelector('#manter2').classList.remove('active');
-  document.querySelector('#manter3').classList.remove('active');
-}
+  function activeFirstMenuItem() { 
+    activeMenuItem(document.querySelector("#manter")); 
+  } 
   
+  function activeSecondMenuItem() { 
+    activeMenuItem(document.querySelector("#manter1")); 
+  } 
+  
+  function activeThirdMenuItem() { 
+    activeMenuItem(document.querySelector("#manter2")); 
+  } 
+  
+  function activeFourthMenuItem() { 
+    activeMenuItem(document.querySelector("#manter3")); 
+  } 
+  
+  function activeFifthMenuItem() { 
+    activeMenuItem(document.querySelector("#manter4")); 
+  } 
 
     
     
