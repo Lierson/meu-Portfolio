@@ -106,13 +106,21 @@ particlesJS("particlesContainer", {
   
 /* máquina de escrecer */
 
-function typeWriter(elemento) {
-  const textoArray = querySelector.innerHTML.split('');
-  elemento.innerHTML = '';
-  for(let i = 0; i < textoArray.length; i++) {
-  setTimeout(() => querySelector.innerHTML += textoArray[i], 75 * i);
-  }
-  }
+function typeWrite(elemento){
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = ' ';
+  textoArray.forEach(function(letra, i){   
+    
+  setTimeout(function(){
+      elemento.innerHTML += letra;
+  }, 75 * i)
+
+});
+}
+const titulo = document.querySelector('.first-text');
+typeWrite(titulo);
+    
+ 
 
   
   
