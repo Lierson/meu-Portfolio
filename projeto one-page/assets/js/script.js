@@ -104,10 +104,15 @@ particlesJS("particlesContainer", {
     activeMenuItem(document.querySelector("#itemMenu5"));  
   } 
   
+/* máquina de escrecer */
 
-    
-    
- 
+function typeWriter(elemento) {
+  const textoArray = querySelector.innerHTML.split('');
+  elemento.innerHTML = '';
+  for(let i = 0; i < textoArray.length; i++) {
+  setTimeout(() => querySelector.innerHTML += textoArray[i], 75 * i);
+  }
+  }
 
   
   

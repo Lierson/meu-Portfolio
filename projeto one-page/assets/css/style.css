@@ -89,3 +89,55 @@ canvas {
     width: 15px;
     margin-left: 5px;
 }
+
+/*página sobre */
+
+.area-sobre {
+   height: 650px;
+   align-items: center; 
+   background-color: blue;
+}
+.header-area {
+    width: 1200px;
+}
+.img-area1, .img-area2, .img-area3 {
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.img-area1 {
+    display: flex;
+    align-items: flex-start;
+}
+.img-area2 {
+    background-color: rgb(247, 8, 8);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.img-area3 {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(247, 203, 8);
+}
+.first-text{
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+.first-text:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
