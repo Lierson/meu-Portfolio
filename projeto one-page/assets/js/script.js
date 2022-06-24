@@ -1,3 +1,11 @@
+/* -----------------------------------------------
+/* Author : Vincent Garreau  - vincentgarreau.com
+/* MIT license: http://opensource.org/licenses/MIT
+/* Demo / Generator : vincentgarreau.com/particles.js
+/* GitHub : github.com/VincentGarreau/particles.js
+/* How to use? : Check the GitHub README
+/* v2.0.0
+/* ----------------------------------------------- */
 particlesJS("particlesContainer", {
     particles: {
       number: { value: 150, density: { enable: true, value_area: 800 } },
@@ -54,7 +62,7 @@ particlesJS("particlesContainer", {
     retina_detect: true
   });
   let count_particles, stats, update;
-  stats = new Stats();
+  stats = new stats();
   stats.setMode(0);
   stats.domElement.style.position = "absolute";
   stats.domElement.style.left = "0px";
@@ -106,20 +114,8 @@ particlesJS("particlesContainer", {
   
 /* máquina de escrecer */
 
-function typeWrite(elemento){
-  const textoArray = elemento.innerHTML.split('');
-  elemento.innerHTML = ' ';
-  textoArray.forEach(function(letra, i){   
-    
-  setTimeout(function(){
-      elemento.innerHTML += letra;
-  }, 75 * i)
-
-});
-}
-const titulo = document.querySelector('.first-text');
-typeWrite(titulo);
-    
+const titulo = document.querySelector('.firstText');
+console.log('titulo');
  
 
   
