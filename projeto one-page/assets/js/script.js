@@ -112,11 +112,8 @@ particlesJS("particlesContainer", {
     activeMenuItem(document.querySelector("#itemMenu5"));  
   } 
   
-/* máquina de escrecer */
 
-const titulo = document.querySelector('.firstText');
-console.log('titulo');
- 
+
 
   
   

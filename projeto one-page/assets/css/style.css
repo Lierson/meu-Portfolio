@@ -94,22 +94,20 @@ canvas {
 
 .area-sobre {
    height: 650px;
-   align-items: center; 
-   background-color: blue;
+   align-items: center;   
 }
 .header-area {
     width: 1200px;
 }
 .img-area1, .img-area2, .img-area3 {
-    height: 500px;
-    background-color: rgb(255, 255, 255);
+    height: 500px;  
 }
 .img-area1 {
     display: flex;
     align-items: flex-start;
 }
 .img-area2 {
-    background-color: rgb(247, 8, 8);
+   
     align-items: center;
     justify-content: center;
     display: flex;
@@ -117,5 +115,57 @@ canvas {
 .img-area3 {
     display: flex;
     align-items: flex-end;
-    background-color: rgb(247, 203, 8);
 }
+
+/*sobre */
+
+.area-sobre {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center; 
+}
+h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0,159,119);
+    font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+}
+.firstText {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: rgb(229,93,73);
+    font-size: 20px;
+    padding: 2px; 
+}
+.coluna1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 2px;
+    padding: 2px;
+    width: 300;
+    height: 300px;
+}
+.coluna0 {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.img-conteudo {
+    width: 250px;
+    height: 300px;
+    border-radius: 150px;
+}
+.teste {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+
