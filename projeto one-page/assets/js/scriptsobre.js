@@ -1,13 +1,13 @@
-const text1 = document.querySelector('.firstText');
-typeWriter(text1);
+const writtenanimation = document.querySelector('.firstText');
+typewriter(writtenanimation);
 
-function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArray.forEach((letra, i) => {
+function typewriter(element) {
+    const textoArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textoArray.forEach((letter, position) => {
         setTimeout(function() {
-            elemento.innerHTML += letra;     
-        }, 75 * i)
+            element.innerHTML += letter;     
+        }, 75 * position)
       
        
     });
