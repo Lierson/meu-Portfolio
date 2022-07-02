@@ -7,10 +7,6 @@ function typewriter(element) {
     textoArray.forEach((letter, position) => {
         setTimeout(function() {
             element.innerHTML += letter;     
-        }, 75 * position)
-      
-       
+        }, 50 * position) 
     });
-        
-
 }
