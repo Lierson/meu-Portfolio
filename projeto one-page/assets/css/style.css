@@ -33,31 +33,18 @@ body {
     font-size: 20px;
     color:rgb(255, 255, 255) ;
     font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
-    padding: 0px;  
-}
-
-.nav-item{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    border: 0px;
-}
-.nav-link:hover {
-    border-bottom: 1px solid rgb(194, 191, 28);;
-    color: rgb(194, 191, 28); 
-}
-/* ---- reset ---- */
-canvas {
-    display: block;
-}
-/* ---- particles.js container ---- */
-#particlesContainer {
-    background-color: #000000;
-    height: 400px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0); 
+    border: 0px; 
 }
 .navbar-toggler-icon {
     background-color: rgb(240, 235, 235);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 30%;
+}
+.nav-link:hover {
+    border-bottom: 1px solid rgb(194, 191, 28);;
+    color: rgb(194, 191, 28); 
 }
 .active {
     background-color: rgb(194, 191, 28);
@@ -65,8 +52,18 @@ canvas {
     border-bottom: 1px solid rgb(194, 191, 28);
     padding: 0px;
 }
-/* footer */
+/* ---- reset ---- */
+canvas {
+    display: block;
+}
 
+/* ---- particles.js container ---- */
+#particlesContainer {
+    background-color: #000000;
+    height: 400px;
+}
+
+/* footer */
 .text-center .p-3 {
     background-color: rgba(0, 0, 0, 0.2)
 }
@@ -143,7 +140,17 @@ canvas {
     filter: grayscale(0);
     --_t: 1.15;
   }
-
+  .hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+  }
+ .hover-overlay-zoom:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .20s ease;
+ }
   
 
 
